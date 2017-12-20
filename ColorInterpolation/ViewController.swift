@@ -26,17 +26,23 @@ class ViewController: UIViewController {
     
     @IBAction func tapTree(_ sender: UIButton) {
         treeSound.play()
-
+        christmasSound.pause()
+        linusSound.pause()
     }
     
     
     @IBAction func tapChristmas(_ sender: UIButton) {
        christmasSound.play()
+        treeSound.pause()
+        linusSound.pause()
+        
     }
     
     
     @IBAction func tapLinus(_ sender: UIButton) {
         linusSound.play()
+        christmasSound.pause()
+        treeSound.pause()
     }
     
     

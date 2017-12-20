@@ -20,25 +20,28 @@ extension AVPlayer {
         }
         self.init(url: url)
     }
-    //func playFromStart() {
-        //seek(to: CMTimeMake(0, 1))
-        //play()
+    func playFromStart() {
+        seek(to: CMTimeMake(0, 1))
+        play()
     }
-   // func playLoop() {
-        //print("🎃 PLAY LOOP");
-       // playFromStart()
-        //NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: currentItem, queue: nil) { notification in
-           // print("🐌 RESTART");
+    func playLoop() {
+        print("🎃 PLAY LOOP");
+       playFromStart()
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: currentItem, queue: nil) { notification in
+           print("🐌 RESTART");
             
-            //if self.timeControlStatus == .playing {
-               // self.seek(to: kCMTimeZero)
-              //  self.play()
-           // }
-     //   }
+            if self.timeControlStatus == .playing {
+                self.seek(to: kCMTimeZero)
+               self.play()
+            }
+       }
 
-   // func endLoop() {
-      //  print("🤡 END LOOP");
-     //   pause()
-        //NotificationCenter.default.removeObserver(self, name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self)
+   func endLoop() {
+     print("🤡 END LOOP");
+     pause()
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self)
 
 
+}
+}
+}
