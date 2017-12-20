@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorInterpolation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CharlieBrownchristmas2" translatesAutoresizingMaskIntoConstraints="NO" id="Ge6-Ok-r9A">
+                                <rect key="frame" x="0.0" y="0.0" width="1149" height="770"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cL-Rv-Tm6">
+                                <rect key="frame" x="89" y="195" width="105" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Christmas" image="13-1"/>
+                                <connections>
+                                    <action selector="tapChristmas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kqe-g6-Iav"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ln-tW-Lcb">
+                                <rect key="frame" x="29" y="360" width="105" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Linus" image="37-1"/>
+                                <connections>
+                                    <action selector="tapLinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="06K-EO-x0Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="300-2j-pkP">
+                                <rect key="frame" x="20" y="44" width="105" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tree" image="10-1"/>
+                                <connections>
+                                    <action selector="tapTree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tXE-c0-QJR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ge6-Ok-r9A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5xf-Ox-AN0"/>
+                            <constraint firstItem="Ge6-Ok-r9A" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="2" id="LBe-zG-coy"/>
+                            <constraint firstItem="Ge6-Ok-r9A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZtH-xi-zWR"/>
+                            <constraint firstAttribute="trailing" secondItem="Ge6-Ok-r9A" secondAttribute="trailing" constant="-125" id="v1W-4x-mlO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Christmas" destination="3cL-Rv-Tm6" id="bNy-lk-Was"/>
+                        <outlet property="Linus" destination="4Ln-tW-Lcb" id="FW0-mV-MVW"/>
+                        <outlet property="Tree" destination="300-2j-pkP" id="cg5-6e-hll"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39.84375" y="57.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="10-1" width="605" height="605"/>
+        <image name="13-1" width="616" height="552"/>
+        <image name="37-1" width="554" height="629"/>
+        <image name="CharlieBrownchristmas2" width="1000" height="600"/>
+    </resources>
+</document>
