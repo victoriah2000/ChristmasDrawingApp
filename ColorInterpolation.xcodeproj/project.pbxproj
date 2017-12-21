@@ -20,6 +20,9 @@
 		B226680E1FE8E80900A6E64B /* Linus.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B226680D1FE8E80900A6E64B /* Linus.m4a */; };
 		B22668101FE8E81400A6E64B /* Christmas.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B226680F1FE8E81400A6E64B /* Christmas.m4a */; };
 		B22668131FE8EB5500A6E64B /* AVPlayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22668121FE8EB5500A6E64B /* AVPlayerExtension.swift */; };
+		B22668151FEC61C300A6E64B /* ColorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22668141FEC61C300A6E64B /* ColorPoint.swift */; };
+		B22668171FEC61CC00A6E64B /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22668161FEC61CC00A6E64B /* LineView.swift */; };
+		B2AF79101FEC78410019E1AA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AF790F1FEC78410019E1AA /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		B226680D1FE8E80900A6E64B /* Linus.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Linus.m4a; sourceTree = "<group>"; };
 		B226680F1FE8E81400A6E64B /* Christmas.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Christmas.m4a; sourceTree = "<group>"; };
 		B22668121FE8EB5500A6E64B /* AVPlayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerExtension.swift; sourceTree = "<group>"; };
+		B22668141FEC61C300A6E64B /* ColorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPoint.swift; sourceTree = "<group>"; };
+		B22668161FEC61CC00A6E64B /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		B2AF790F1FEC78410019E1AA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 		035DB84B1FD4263B00B44061 = {
 			isa = PBXGroup;
 			children = (
+				B2AF790F1FEC78410019E1AA /* Default-568h@2x.png */,
 				035DB8561FD4263B00B44061 /* ColorInterpolation */,
 				035DB86B1FD4263B00B44061 /* ColorInterpolationTests */,
 				035DB8761FD4263B00B44061 /* ColorInterpolationUITests */,
@@ -116,6 +123,8 @@
 				B22668111FE8E86400A6E64B /* audio */,
 				035DB8591FD4263B00B44061 /* ViewController.swift */,
 				035DB85B1FD4263B00B44061 /* Main.storyboard */,
+				B22668161FEC61CC00A6E64B /* LineView.swift */,
+				B22668141FEC61C300A6E64B /* ColorPoint.swift */,
 				035DB85E1FD4263B00B44061 /* Assets.xcassets */,
 				035DB8601FD4263B00B44061 /* LaunchScreen.storyboard */,
 				035DB8631FD4263B00B44061 /* Info.plist */,
@@ -263,6 +272,7 @@
 				035DB85F1FD4263B00B44061 /* Assets.xcassets in Resources */,
 				B226680E1FE8E80900A6E64B /* Linus.m4a in Resources */,
 				B22668101FE8E81400A6E64B /* Christmas.m4a in Resources */,
+				B2AF79101FEC78410019E1AA /* Default-568h@2x.png in Resources */,
 				035DB85D1FD4263B00B44061 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,10 +298,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22668151FEC61C300A6E64B /* ColorPoint.swift in Sources */,
 				035DB85A1FD4263B00B44061 /* ViewController.swift in Sources */,
 				B22668131FE8EB5500A6E64B /* AVPlayerExtension.swift in Sources */,
 				035DB8581FD4263B00B44061 /* AppDelegate.swift in Sources */,
 				035DB8881FD426A200B44061 /* CGFloatExtension.swift in Sources */,
+				B22668171FEC61CC00A6E64B /* LineView.swift in Sources */,
 				035DB8861FD4269100B44061 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
